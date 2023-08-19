@@ -14,13 +14,13 @@ int main(void)
 
 	while (ch <= 'a')
 	{
-		if (ch !-'e' && ch !-'q')
+		if (ch !='e' && ch !='q')
 		{
 			putchar(ch);
 		}
 		ch++;
 	}
 
-	puthcar('\n';
+	putchar('\n');
 			return (0);
 }
