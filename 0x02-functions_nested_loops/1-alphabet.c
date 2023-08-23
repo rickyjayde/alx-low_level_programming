@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- * print_alphabet - Prints the lowercase alphabet
  *
  * Description: Prints all lowercase letters from 'a' to 'z'
  *              using the _putchar function
