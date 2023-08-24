@@ -4,10 +4,11 @@ int main(void)
 {
     int n = 50;
     unsigned long fib1 = 1, fib2 = 2, nextFib;
+    int i;
 
     printf("%lu, %lu", fib1, fib2);
 
-    for (int i = 3; i <= n; i++)
+    for (i = 3; i <= n; i++)
     {
         nextFib = fib1 + fib2;
         printf(", %lu", nextFib);
