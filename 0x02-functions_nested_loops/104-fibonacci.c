@@ -1,28 +1,28 @@
 #include <stdio.h>
 
-/* main - Entry point of the program
+/*
+ * main - Entry point of the program
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    int fib1 = 1, fib2 = 2, nextFib, count = 0;
+    int i, n;
+    unsigned int fib1 = 1, fib2 = 2, nextFib;
+
+    n = 98; /* Number of Fibonacci numbers to generate */
 
     printf("%d, %d", fib1, fib2);
 
-    while (count < 96)
+    for (i = 3; i <= n; i++)
     {
         nextFib = fib1 + fib2;
-        printf(", %d", nextFib);
-
+        printf(", %u", nextFib);
         fib1 = fib2;
         fib2 = nextFib;
-
-        count++;
     }
 
     printf("\n");
-
-    return 0;
+    return (0);
 }
 
