@@ -1,12 +1,13 @@
 #include <stdio.h>
+
 int main(void)
 {
-	    unsigned int fib1 = 1, fib2 = 2, nextFib;
-    int count;
+    int n = 98; // Number of Fibonacci numbers to generate
+    unsigned int fib1 = 1, fib2 = 2, nextFib;
 
     printf("%u, %u", fib1, fib2);
 
-    for (count = 3; count <= 98; count++)
+    for (int i = 3; i <= n; i++)
     {
         nextFib = fib1 + fib2;
         printf(", %u", nextFib);
