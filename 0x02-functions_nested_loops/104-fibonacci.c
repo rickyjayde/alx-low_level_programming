@@ -1,19 +1,24 @@
 #include <stdio.h>
 
+/* main - Entry point of the program
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-    int n = 98; /* Number of Fibonacci numbers to generate */
-    unsigned int fib1 = 1, fib2 = 2, nextFib;
-    int i; /* Declare 'i' here */
+    int fib1 = 1, fib2 = 2, nextFib, count = 0;
 
-    printf("%u, %u", fib1, fib2);
+    printf("%d, %d", fib1, fib2);
 
-    for (i = 3; i <= n; i++)
+    while (count < 96)
     {
         nextFib = fib1 + fib2;
-        printf(", %u", nextFib);
+        printf(", %d", nextFib);
+
         fib1 = fib2;
         fib2 = nextFib;
+
+        count++;
     }
 
     printf("\n");
