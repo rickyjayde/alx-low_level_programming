@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point of the program
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
     unsigned long fib1 = 1, fib2 = 2, nextFib;
