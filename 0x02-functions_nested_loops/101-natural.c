@@ -1,17 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main Lists all natural numbers before 1024(excluded)
+ * that are multiples of 3 and 5
  *
  * Return: Always 0
  */
 int main(void)
 {
-    int sum = 0;
+    int i, sum = 0;
 
-    for (int i = 3; i < 1024; i++)
+    for (i = 0; i < 1024; i++)
     {
-        if (i % 3 == 0 || i % 5 == 0)
+        if ((i % 3) == 0 || (i % 5) == 0)
         {
             sum += i;
         }
