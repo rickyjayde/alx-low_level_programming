@@ -16,15 +16,13 @@ int main(void)
 
     i = 0;
 
-    /* Commented out the loop to avoid the infinite loop
-    while (i < 10)
+    /* Commented out the loop to avoid the infinite loop */
+    while (*(int *)(&i + i))
     {
         putchar(i);
     }
-    */
 
     printf("Infinite loop avoided! \\o/\n");
 
     return (0);
 }
-
