@@ -1,17 +1,31 @@
 #include <stdio.h>
 #include <string.h>
-#include <stddef.h>
 
-void puts_half(char *str)
-{
-    int n, start;
+void puts_half(char *str) {
+    int length = strlen(str);
+    int start_index;
 
-    n = strlen(str);
-    start = (n % 2 == 0) ? n / 2 : (n - 1) / 2;
+    if (length % 2 == 0) {
+        start_index = length / 2;
+    } else {
+        start_index = (length - 1) / 2;
+    }
 
-    for (int i = start; i < n; i++)
-    {
+    for (int i = start_index; i < length; i++) {
         putchar(str[i]);
     }
     putchar('\n');
 }
+
+int main(void) {
+    char str1[] = "Hello";
+    char str2[] = "World";
+    char str3[] = "OpenAI";
+
+    puts_half(str1);
+    puts_half(str2);
+    puts_half(str3);
+
+    return 0;
+}
+
